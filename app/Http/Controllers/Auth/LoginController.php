@@ -24,6 +24,11 @@ class LoginController extends Controller
         logout as performLogout;
     }
 
+    public function index()
+    {
+        return view('auth.login');
+    }
+
     public function logout(Request $request)
     {
         $this->performLogout($request);
